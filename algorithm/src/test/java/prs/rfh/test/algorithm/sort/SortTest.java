@@ -42,4 +42,14 @@ public class SortTest {
             System.out.println(result[i]);
         }
     }
+
+    @Test
+    public void testquickSort(){
+        int [] array = new int[]{5,4,1,7,9,0,10,9,8,1};
+        int [] result = QuickSort.quickSort(array);
+
+        for (int i = 0; i < result.length; i++) {
+            System.out.println(result[i]);
+        }
+    }
 }
