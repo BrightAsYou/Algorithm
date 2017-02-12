@@ -23,12 +23,13 @@ public class HeapSort {
         data[i] = data[i] - data[j];
     }
 
-    public static void heapSort(int[] data) {
+    public static int[] heapSort(int[] data) {
         for (int i = 0; i < data.length; i++) {
             createMaxdHeap(data, data.length - 1 - i);
             swap(data, 0, data.length - 1 - i);
             print(data);
         }
+        return data;
     }
 
     public static void createMaxdHeap(int[] data, int lastIndex) {
